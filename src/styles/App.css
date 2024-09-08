@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #0a074e; /* Dark blue for hover */
+    --secondary-color: #f8f9fa; /* Light background color */
+    --font-color: #141821; /* Dark font color */
+    --hover-text-color: #ffffff; /* Text color on hover */
+    --button-bg: #193b79; /* Blue button color */
+    --button-hover-bg: #0a074e; /* Darker blue button hover */
+    --dashboard-bg: #6b8cc9; /* Dashboard background color */
+    --navbar-bg: #0a074e; /* Navbar dark blue background */
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --font-bold: 700;
+    --font-size-xl: 1.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-lg: 1.125rem;
+    --rounded-full: 9999px;
+    --transition-duration: 0.3s;
+    --global-bg: #d3e2ff; /* Global light blue background */
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--global-bg);
+    color: var(--font-color);
+    font-family: sans-serif;
+  }
+  
+  /* Home Page Styling */
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .home-title {
+    margin-bottom: 2rem;
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-bold);
+    color: var(--font-color);
+  }
+  
+  .home-description {
+    font-size: var(--font-size-lg);
+    margin-bottom: 2.5rem;
+    color: var(--font-color);
+  }
+  
+  .home-button-container {
+    margin-bottom: 2rem;
+  }
+  
+  .home-button {
+    background-color: var(--button-bg);
+    color: white;
+    font-weight: var(--font-bold);
+    padding: 1rem 2rem;
+    border-radius: var(--rounded-full);
+    box-shadow: var(--shadow-lg);
+    transition: background-color var(--transition-duration);
+  }
+  
+  .home-button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Testimonials Grid */
+  .home-testimonials {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .home-testimonials {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .heading{
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-bold);
+    color: var(--font-color);
+    padding: 1rem 2rem;
+  }
+  
+/* Cards Styling */
+.card {
+    border: 1px solid #ddd;
+    box-shadow: var(--shadow-lg);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    cursor: pointer;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+  
+  .card:hover {
+    background-color: var(--primary-color);
+    color: var(--hover-text-color);
+  }
+  
+  .card-img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: var(--rounded-full); /* Ensure the image fits well within the circle */
+  }
+  
+  .card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-bold);
+  }
+  
+  .card-text {
+    margin-top: 0.5rem;
+  }
+  
+  
+  .dashboard-container {
+    background-color: var(--dashboard-bg);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .dashboard-title {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-content {
+    color: white; /* Ensure all dashboard content remains white */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: var(--navbar-bg);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: var(--font-bold);
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

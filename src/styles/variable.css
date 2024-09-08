@@ -1,0 +1,30 @@
+:root {
+    --primary-bg-color: #c0e2ff;
+    --card-bg-color-1: #4a90e2; /* Blue */
+    --card-bg-color-2: #7ed321; /* Green */
+    --card-bg-color-3: #d0021b; /* Red */
+    --card-bg-color-4: #f8e71c; /* Yellow */
+    --card-bg-color-5: #9b59b6; /* Purple */
+    --card-bg-color-6: #1abc9c; /* Teal */
+    --card-bg-color-7: #f39c12; /* Orange */
+    --card-bg-color-8: #34495e; /* Indigo */
+    --card-bg-color-9: #e91e63; /* Pink */
+    --header-bg-color: #007bff; 
+    --text-light: #ffffff;
+    --text-dark: #333333;
+  }
+  .card {
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .card-body {
+    padding: 1.5rem; 
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      margin: 10px 0; 
+    }
+  }
